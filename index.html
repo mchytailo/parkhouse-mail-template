@@ -13,6 +13,7 @@
         .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td {
             line-height: 100%;
         }
+
         .ExternalClass {
             width: 100%;
         }
@@ -96,13 +97,13 @@
 
         @media screen and (max-width: 500px) {
             .email-section {
-                padding: 20px 19px;
+                padding: 20px 19px !important;
             }
         }
 
         @media screen and (max-width: 360px) {
             .email-section {
-                padding: 10px 10px;
+                padding: 10px 10px !important;
             }
         }
 
@@ -123,125 +124,6 @@
             z-index: 0;
         }
 
-        .hero .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            content: '';
-            width: 100%;
-            background: #000000;
-            z-index: -1;
-            opacity: .3;
-        }
-
-        .hero .text h2 {
-            color: #fff;
-            font-size: 50px;
-            margin-bottom: 0;
-            font-weight: 300;
-            line-height: 1;
-        }
-
-        .hero .text h2 span {
-            font-weight: 600;
-            color: #448ef6;
-        }
-
-        .top-fail-block p,
-        .top-fail-block a {
-            margin: 0;
-            text-align: left;
-            font: normal normal normal 10px/13px Optima;
-            letter-spacing: 0;
-            color: #757575;
-
-        }
-
-        .top-fail-block a {
-            text-decoration: underline;
-        }
-
-        .main-logo {
-            margin: 0 auto 20px;
-            max-width: 458px;
-            display: block;
-        }
-
-        .hero-image {
-            width: 100%;
-            display: flex;
-            position: relative;
-        }
-
-        .hero-image img,
-        .main-logo img {
-            width: 100%;
-            height: auto;
-        }
-
-        .main-text {
-            margin-top: 45px;
-            margin-bottom: 55px;
-            display: block;
-        }
-
-        .main-text h2 {
-            text-align: center;
-            font: normal normal normal 17px/24px Optima;
-            letter-spacing: 3.4px;
-            color: #9EA69C;
-            text-transform: uppercase;
-            opacity: 1;
-            max-width: 300px;
-            margin: 0 auto 40px;
-        }
-
-        .main-text p {
-            text-align: center;
-            font: normal normal normal 15px/24px Optima;
-            letter-spacing: 0;
-            color: #000000;
-            opacity: 1;
-            margin: 0 10px;
-        }
-
-        .main-text p.smaller-text {
-            margin: 0 20px;
-        }
-
-        .contact-info {
-            display: block;
-        }
-
-        .contact-info .logo-icon {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 21px;
-        }
-        .contact-info .logo-icon img {
-            margin: 0 auto;
-        }
-
-        .contact-info .contact-block p {
-            text-align: center;
-            font: normal normal normal 12px/22px Optima;
-            letter-spacing: 0;
-            color: #9EA69C;
-            opacity: 1;
-            margin: 0;
-        }
-
-        .contact-info .contact-block p span.contact-block-line {
-            width: 1px;
-            height: 12px;
-            background-color: #9EA69C;
-            opacity: 1;
-            margin: 0 10px;
-            display: inline-flex;
-        }
-
         .hr-line-block {
             margin: 0 38px;
             display: block;
@@ -260,31 +142,6 @@
                 padding: 0 10px;
             }
         }
-
-        .footer-text {
-            max-width: 470px;
-            margin: 0 auto 30px;
-            padding: 0 20px;
-            display: block;
-        }
-
-        .footer-text p,
-        .footer-text p a {
-            text-align: center;
-            font: normal normal normal 10px/16px Optima;
-            letter-spacing: 0;
-            color: #000000;
-        }
-
-        .footer-text p a {
-            text-decoration: underline;
-        }
-
-        .footer-icon {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
     </style>
 </head>
 
@@ -297,11 +154,21 @@
         <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
                style="margin: auto;">
             <tr>
-                <td valign="top" style="padding: 0 0 10px;" class="bg_white top-fail-block">
-                    <p>
+                <td valign="top" style="padding: 0 0 10px; background: #ffffff;">
+                    <p style="margin: 0;
+                        text-align: left;
+                        font: normal normal normal 10px/13px Optima;
+                        letter-spacing: 0;
+                        color: #757575;"
+                    >
                         If you cannot see the images below,
                         <br>
-                        <a href="#">
+                        <a href="#" style="margin: 0;
+                        text-align: left;
+                        font: normal normal normal 10px/13px Optima;
+                        letter-spacing: 0;
+                        color: #757575;
+                        text-decoration: underline;">
                             view this image in your browser
                         </a>
                     </p>
@@ -309,38 +176,78 @@
             </tr>
             <tr>
                 <td valign="middle" class="hero email-section"
-                    style="">
+                    style="
+                        position: relative;
+                        z-index: 0;
+                        padding: 40px 38px;
+                        ">
                     <table style="width: 100%;">
                         <tr>
                             <td>
                                 <table style="width: 100%;">
                                     <tr>
-                                        <td class="main-logo">
-                                            <img src="https://mchytailo.github.io/parkhouse-mail-template/images/logoMain.png" alt="">
+                                        <td
+                                            style="
+                                                margin: 0 auto 20px;
+                                                max-width: 458px;
+                                                display: block;">
+                                            <img src="https://mchytailo.github.io/parkhouse-mail-template/images/logoMain.png"
+                                                 alt=""
+                                                 style="width: 100%;
+                                                   height: auto;">
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="hero-image">
-                                            <img src="https://mchytailo.github.io/parkhouse-mail-template/images/heroImage.png" alt="">
+                                        <td style="
+                                                                width: 100%;
+                                                                display: flex;
+                                                                position: relative;">
+                                            <img src="https://mchytailo.github.io/parkhouse-mail-template/images/heroImage.png"
+                                                 alt=""
+                                                 style="width: 100%;
+                                                        height: auto;">
                                         </td>
                                     </tr>
                                 </table>
                             </td>
                         </tr>
                         <tr>
-                            <td class="main-text">
-                                <h2>
+                            <td style="margin-top: 45px; margin-bottom: 55px; display: block;">
+                                <h2 style="
+                                        text-align: center;
+                                        font: normal normal normal 17px/24px Optima;
+                                        letter-spacing: 3.4px;
+                                        color: #9EA69C;
+                                        text-transform: uppercase;
+                                        opacity: 1;
+                                        max-width: 300px;
+                                        margin: 0 auto 40px;
+                                    ">
                                     THANK YOU
                                     <br>
                                     FOR YOUR REGISTRATION
                                 </h2>
-                                <p>
+                                <p style="
+                                        text-align: center;
+                                        font: normal normal normal 15px/24px Optima;
+                                        letter-spacing: 0;
+                                        color: #000000;
+                                        opacity: 1;
+                                        margin: 0 10px;
+                                    ">
                                     Thank you for your interest in Parkhouse Residences, a very limited offering of
                                     thirty expansive three-bedroom half-floor residences and duplex penthouses in
                                     Newport Beach.
                                 </p>
                                 <br>
-                                <p class="smaller-text">
+                                <p style="
+                                        text-align: center;
+                                        font: normal normal normal 15px/24px Optima;
+                                        letter-spacing: 0;
+                                        color: #000000;
+                                        opacity: 1;
+                                        margin: 0 20px;
+                                    ">
                                     We look forward to sharing with you, construction updates,
                                     exclusive preview opportunities and sales gallery opening details in the coming
                                     months.
@@ -348,17 +255,33 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="contact-info">
-                                <table>
+                            <td style="display: block;">
+                                <table style="width: 100%;">
                                     <tr>
-                                        <td class="logo-icon">
-                                            <img src="https://mchytailo.github.io/parkhouse-mail-template/images/logoMini.png" alt="">
+                                        <td style="display: flex;
+                                            justify-content: center;
+                                            margin-bottom: 21px;">
+                                            <img src="https://mchytailo.github.io/parkhouse-mail-template/images/logoMini.png"
+                                                 alt=""
+                                                 style="margin: 0 auto;">
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="contact-block">
-                                            <p>
-                                                www.parkhouseresidences.com<span class="contact-block-line"></span>
+                                        <td>
+                                            <p style="
+                                                text-align: center;
+                                                font: normal normal normal 12px/22px Optima;
+                                                letter-spacing: 0;
+                                                color: #9EA69C;
+                                                opacity: 1;
+                                                margin: 0;
+                                                ">
+                                                www.parkhouseresidences.com<span style="width: 1px;
+                                                                            height: 12px;
+                                                                            background-color: #9EA69C;
+                                                                            opacity: 1;
+                                                                            margin: 0 10px;
+                                                                            display: inline-flex;"></span>
                                                 info@parkhouseresidences.com
                                             </p>
                                             <p>1234 Uptown Newport Drive, Newport Beach, CA 92660</p>
@@ -371,15 +294,30 @@
                 </td>
             </tr>
             <tr>
-                <td valign="middle" class="hr-line-block"></td>
+                <td valign="middle"
+                    class=".hr-line-block"
+                    style="margin: 0 38px;
+                    display: block;
+                    height: 1px;
+                    background-color: #9EA69C;"></td>
             </tr>
             <tr>
                 <td valign="middle" class="hero email-section"
-                    style="">
+                    style="position: relative;
+                           z-index: 0;
+                           padding: 40px 38px;
+                           ">
                     <table style="width: 100%;">
                         <tr>
-                            <td class="footer-text">
-                                <p>
+                            <td style="
+                                max-width: 470px;
+                                margin: 0 auto 30px;
+                                padding: 0 20px;
+                                display: block;">
+                                <p style="text-align: center;
+                                        font: normal normal normal 10px/16px Optima;
+                                        letter-spacing: 0;
+                                        color: #000000;">
                                     © 2021 Parkhouse Residences | Real Estate Consulting, Sales and Marketing by
                                     Polaris Pacific -
                                     <br>
@@ -389,15 +327,34 @@
                                     This email was sent to you because you elected to receive the latest news on
                                     Parkhouse Residences.
                                     <br>
-                                    Not interested anymore? <a href="#">Click here</a> to unsubscribe.
-                                    <a href="#" target="_blank">Privacy Policy</a> | <a href="#" target="_blank">Forward
-                                    to a friend</a>
+                                    Not interested anymore?
+                                    <a href="#" style="text-align: center;
+                                        font: normal normal normal 10px/16px Optima;
+                                        text-decoration: underline;
+                                        letter-spacing: 0;
+                                        color: #000000;">Click here</a> to unsubscribe.
+                                    <a href="#" target="_blank" style="text-align: center;
+                                        font: normal normal normal 10px/16px Optima;
+                                        text-decoration: underline;
+                                        letter-spacing: 0;
+                                        color: #000000;">Privacy Policy</a>
+                                    |
+                                    <a href="#" target="_blank" style="text-align: center;
+                                        font: normal normal normal 10px/16px Optima;
+                                        letter-spacing: 0;
+                                        text-decoration: underline;
+                                        color: #000000;">Forward to a friend</a>
                                 </p>
                             </td>
                         </tr>
                         <tr>
-                            <td class="footer-icon">
-                                <img src="https://mchytailo.github.io/parkhouse-mail-template/images/PolarisLogo.png" alt="">
+                            <td style="
+            display: flex;
+            justify-content: center;
+            align-items: center;">
+                                <img src="https://mchytailo.github.io/parkhouse-mail-template/images/PolarisLogo.png"
+                                     alt=""
+                                     style="margin: 0 auto">
                             </td>
                         </tr>
                     </table>
